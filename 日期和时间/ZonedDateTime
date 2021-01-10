@@ -18,9 +18,9 @@ public class Main {
 		if (!LocalDateTime.of(2019, 10, 15, 14, 20, 0)
 				.equals(calculateArrivalAtNY(LocalDateTime.of(2019, 10, 15, 13, 0, 0), 13, 20))) {
 			System.err.println("测试失败!");
-		} else if (!LocalDateTime.of(2019, 11, 15, 13, 20, 0)
+		} else if (LocalDateTime.of(2019, 11, 15, 13, 20, 0)
 				.equals(calculateArrivalAtNY(LocalDateTime.of(2019, 11, 15, 13, 0, 0), 13, 20))) {
-			System.err.println("测试失败!");
+			System.out.println("测试成功!");
 		}
 	}
 
