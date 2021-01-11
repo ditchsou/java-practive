@@ -1,0 +1,17 @@
+public static int[] parseTime(String s) {
+		// FIXME: 
+		if(s==null) {
+
+			throw new IllegalArgumentException();}
+		
+		Pattern pattern = Pattern.compile("([0-2][0-3])\\:([0-5][0-9])\\:([0-5][0-9])");
+        // 获得Matcher对象:
+        Matcher matcher= pattern.matcher(s);
+        if (matcher.matches()) {
+        	Integer hour = Integer.parseInt(matcher.group(1));//Integer.parseInt将字符串转换为整数
+			Integer minute = Integer.parseInt(matcher.group(2));
+			Integer second = Integer.parseInt(matcher.group(3));
+            return  new int[] {hour, minute, second};
+            }else{
+            	throw new IllegalArgumentException();
+            	}
