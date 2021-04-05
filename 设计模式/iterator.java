@@ -35,6 +35,7 @@ public class ReverseArrayCollection<T> implements Iterable<T> {
 		public T next() {
 			index--;
 			return array[index];
+			
 		}
 	}
 }
